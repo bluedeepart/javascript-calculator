@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+# JavaScript Calculator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+This project is a JavaScript calculator built with React. It is functionally similar to the [FreeCodeCamp Calculator](https://javascript-calculator.freecodecamp.rocks/). The goal of this project is to create a fully functional calculator that meets specific user stories and can handle a variety of mathematical operations.
 
-In the project directory, you can run:
+**Note:** There are known compatibility issues with React 18 and the tests for this project. For more details, see the [issue here](https://github.com/facebook/react/issues/23382).
 
-### `npm start`
+## User Stories
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The calculator should fulfill the following user stories:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. **Contains an equal sign button (`=`) with `id="equals"`.**
+2. **Contains 10 number buttons (0-9) with corresponding IDs:**
+   - `id="zero"`
+   - `id="one"`
+   - `id="two"`
+   - `id="three"`
+   - `id="four"`
+   - `id="five"`
+   - `id="six"`
+   - `id="seven"`
+   - `id="eight"`
+   - `id="nine"`
+3. **Contains 4 operator buttons with corresponding IDs:**
+   - `id="add"` (addition `+`)
+   - `id="subtract"` (subtraction `-`)
+   - `id="multiply"` (multiplication `*`)
+   - `id="divide"` (division `/`)
+4. **Contains a decimal point button (`.`) with `id="decimal"`.**
+5. **Contains a clear button with `id="clear"`.**
+6. **Contains a display element with `id="display"`.**
+7. **Pressing the clear button (`C`) resets the display to `0` and clears any current input or output.**
+8. **Displays the input dynamically as numbers and operators are pressed.**
+9. **Performs calculations correctly for sequences of numbers and operators, showing the result when `=` is pressed.**
+10. **Prevents numbers from beginning with multiple zeros (e.g., `0001` should be displayed as `1`).**
+11. **Appends a decimal point (`.`) if clicked, ensuring no more than one decimal point per number.**
+12. **Handles operations with decimal numbers accurately.**
+13. **Processes multiple consecutive operators by using only the last operator (excluding the negative sign).**
+14. **Starts a new calculation if an operator is pressed immediately after `=`.**
+15. **Rounds results to a reasonable precision, ideally to at least 4 decimal places.**
 
-### `npm test`
+## Technologies Used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **React**: For building the user interface.
+- **JavaScript**: For implementing the calculator logic.
+- **Tailwind CSS**: For modern and responsive styling.
+- **HTML**: For the structure of the calculator.
 
-### `npm run build`
+## Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To get started with the project, follow these steps:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/bluedeepart/javascript-calculator.git
+2. **Navigate to the Project Directory**
+    ```bash
+    cd javascript-calculator
+3. **Install Dependencies**
+    ```bash
+    npm install
+2. **Start the Development Server**
+    ```bash
+    npm start
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
